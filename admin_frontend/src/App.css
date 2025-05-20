@@ -1,0 +1,41 @@
+/* Remove all previous styles and replace with: */
+
+/* Base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth transitions for sidebar */
+.MuiDrawer-paper {
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms !important;
+}
+
+/* Better scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .MuiDrawer-paper {
+    width: 240px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiDrawer-paper {
+    width: 220px !important;
+  }
+}

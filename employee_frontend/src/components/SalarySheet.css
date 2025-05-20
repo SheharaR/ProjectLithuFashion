@@ -1,0 +1,60 @@
+.salary-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.salary-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.salary-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.salary-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.task-title {
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.salary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.salary-table th,
+.salary-table td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.salary-table th {
+  background-color: #f4f4f4;
+}
+
+.pdf-button {
+  margin-top: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background-color: #0056b3;
+}

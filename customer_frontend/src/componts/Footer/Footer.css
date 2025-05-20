@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background-color: #2b1911; /* Warm brown background for restaurant theme */
+  color: #f8f1e9; /* Soft off-white text color */
+  padding: 40px 20px; /* Increased top/bottom padding */
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* This container will handle the layout of the footer content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap for better responsiveness */
+  justify-content: space-between; /* Better spacing between sections */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each section of the footer */
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+  margin: 10px 20px;
+  min-width: 250px; /* Slightly increased min width */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content-left {
+  margin-top: -5px;
+}
+
+/* Logo styling */
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e6c384; /* Gold color for logo text */
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Description text styling */
+.footer-description {
+  font-size: 15px;
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Social icons styling */
+.footer-social-icons {
+  margin-top: 20px;
+  display: flex;
+}
+
+.footer-social-icons a {
+  margin-right: 20px; /* Space between icons */
+  display: inline-block;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-social-icons a:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #e6c384; /* Gold color for icons */
+}
+
+/* Styling for lists */
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content-center li {
+  margin-bottom: 10px; /* Increased space between menu items */
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.footer-content-center li:hover {
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+.footer-content h2 {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px; /* Space below headings */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-content h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #e6c384; /* Gold accent color */
+}
+
+/* Link styling */
+.footer-content-center a,
+.footer-content-right a {
+  color: #f8f1e9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content-right {
+  margin-top: 0; /* Reset top margin */
+}
+
+.footer-content-center {
+  margin-left: 0; /* Reset left margin */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-content-center a:hover,
+.footer-content-right a:hover {
+  color: #e6c384; /* Gold hover color */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px; /* Space between contact items */
+}
+
+.contact1 {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  font-size: 18px;
+  color: #e6c384; /* Gold color for icons */
+  margin-right: 10px;
+  margin-top: 4px; /* Align icon with text */
+}
+
+/* Copyright styling */
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 30px 0 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.footer p {
+  font-weight: 300;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    justify-content: flex-start;
+  }
+  
+  .footer-content-center,
+  .footer-content-right {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .footer-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-content-center {
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer-content-right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contact, .contact1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .contact-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
